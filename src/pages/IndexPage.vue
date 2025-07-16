@@ -10,7 +10,7 @@
         filled
         v-model="name"
         label="ชื่อ-สกุล: *"
-        hint="กรุณาใส่ชื่อและนามสกุล:"
+        hint="กรุณาใส่ชื่อและนามสกุล"
         lazy-rules
         :rules="[ val => val && val.length > 0 || 'กรุณาใส่ข้อความที่ถูกต้องง']"
       />
@@ -30,8 +30,8 @@
       <q-toggle v-model="accept" label="I accept the license and terms" />
 
       <div>
-        <q-btn label="Submit" type="submit" color="primary"/>
-        <q-btn label="Reset" type="reset" color="primary" flat class="q-ml-sm" />
+        <q-btn label="ยืนยัน" type="submit" color="primary"/>
+        <q-btn label="เริ่มใหม่" type="reset" color="primary" flat class="q-ml-sm" />
       </div>
     </q-form>
 
